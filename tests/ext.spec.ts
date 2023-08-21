@@ -26,10 +26,11 @@ test('reject swap', async ({ page, extensionId, context }) => {
   const rejectBtn = extensionPage.getByRole('button', { name: 'Reject' });
   await rejectBtn.scrollIntoViewIfNeeded();
 
-  await new Promise((r) => setTimeout(r, 2000));
+  await new Promise((r) => setTimeout(r, 1000));
 
   // reject
   await rejectBtn.click();
+  await new Promise((r) => setTimeout(r, 2000));
 
   await page.close();
 });
