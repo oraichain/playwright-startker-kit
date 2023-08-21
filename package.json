@@ -1,0 +1,36 @@
+{
+  "name": "starter-playwright",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "firefox": "playwright test --project=firefox",
+    "chromium": "playwright test --project=chromium",
+    "webkit": "playwright test --project=webkit",
+    "test": "playwright test --project=chromium",
+    "test-head": "playwright test --headed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oraichain/playwright-startker-kit.git"
+  },
+  "keywords": [
+    "playwright",
+    "playwright-test",
+    "web test automation"
+  ],
+  "author": "CharlyAutomatiza",
+  "license": "CC0",
+  "bugs": {
+    "url": "https://github.com/oraichain/playwright-startker-kit/issues"
+  },
+  "homepage": "https://github.com/oraichain/playwright-startker-kit#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.37.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
